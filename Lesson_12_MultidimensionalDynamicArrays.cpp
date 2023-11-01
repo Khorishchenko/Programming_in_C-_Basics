@@ -3,34 +3,34 @@
 
 
 
-// int main()
-// {
-//     int **ptr = nullptr;
+int main()
+{
+    int **ptr = nullptr;
 
-//     ptr = new int*[5];
+    ptr = new int*[5];
 
-//     for (int i = 0; i < 5; i++)
-//         ptr[i] = new int[5];
+    for (int i = 0; i < 5; i++)
+        ptr[i] = new int[5];
 
     
-//     for (int i = 0; i < 5; i++)
-//     {
-//         for (int j = 0; j < 5; j++)
-//         {
-//             ptr[i][j] = rand() % 10;
-//             std::cout << ptr[i][j] << ' ';
-//         }
-//         std::cout << std::endl;
-//     }
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            ptr[i][j] = rand() % 10;
+            std::cout << ptr[i][j] << ' ';
+        }
+        std::cout << std::endl;
+    }
 
-//     if (ptr != nullptr)
-//     {
-//         for (int i = 0; i < 5; i++)
-//             delete [] ptr[i];
+    if (ptr != nullptr)
+    {
+        for (int i = 0; i < 5; i++)
+            delete [] ptr[i];
         
-//         delete [] ptr;
-//     }
-// }
+        delete [] ptr;
+    }
+}
 
 
 
